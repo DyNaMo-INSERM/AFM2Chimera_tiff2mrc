@@ -4,7 +4,14 @@ USE https://www.cgl.ucsf.edu/chimera/download.html (NOT CHIMERAX)
 
 SEE CHIMERA OPERATION MANUAL https://sites.google.com/view/ignaciocasuso/protocol-afm2chimera
 
-To compare the HS-AFM topography to the cryo-EM structural data, a custom-made code was was implemented using the macro coding language of free available software and plugins (Fiji is just ImageJ, the version 1.54f 64-bit works correctly). The procedure is the following: 1) the HS-AFM movie was opened in Fiji as .tif file. 2) the frame of interest is selected. 3) the code of the Macro01_AFM2Chimera_ (available in Suppl. Information) is run. 3) the code Macro02_AFM2Chimera_ (available in Suppl. Information) is run. 5) The file created by the Macro02_AFM2Chimera is opened in USCF Chimera (version 1.13.1 works correctly), the map values are inverted, a volume filter of 2 applied, and the range adjusted until a full surface obtained. Finally, the scale bar and the voxel coordinates are used to ajust the dimensions of the molecules in the USCF Chimera surface visualization to that of the HS-AFM topography. 6) The resulting surface map is saved in .mrc format.
+The custom-made code runs using the macro coding language of free available software and plugins (Fiji is just ImageJ, the version 1.54f 64-bit works correctly). The procedure is the following: 
+1) the HS-AFM movie was opened in Fiji as .tif file
+2) the frame of interest is selected
+3) the code of the Macro01_AFM2Chimera_ (available in Suppl. Information) is run
+4) the code Macro02_AFM2Chimera_ (available in Suppl. Information) is run
+5) The file created by the Macro02_AFM2Chimera is opened in USCF Chimera (version 1.13.1 works correctly), the map values are inverted, a volume filter of 2 applied, and the range adjusted until a full surface obtained. Next, the scale bar and the voxel coordinates are used to ajust the dimensions of the molecules in the USCF Chimera surface visualization to that of the HS-AFM topography
+6) The resulting surface map is saved in .mrc format
+
 
 //------------------------------------------------------------------ // Macro 01 — AFM-to-Chimera conversion // The following macro converts the selected HS-AFM frame into the intermediate format required for the subsequent conversion step.
 
